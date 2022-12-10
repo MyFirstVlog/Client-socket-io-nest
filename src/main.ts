@@ -7,7 +7,20 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       Websocket client 
     </h1>
 
-    <span>offline</span>
+    <span id="server-status">disconnected</span>
+
+    <ul id="clients-ul"></ul>
+
+    <form id="message-form">
+      <input 
+        placeholder="message"
+        id="message-input"
+      />
+    </form>
+
+    <h3>Messages</h3>
+    <ul id="messages-ul"></ul>
+
   </div>
 `
 connectToServer();
