@@ -5,7 +5,7 @@ let socket : Socket;
 export const connectToServer = (token: string) => {
     // localhost:3000/socket.io/socket.io.js
 
-    const manager = new Manager('localhost:3000/socket.io/socket.io.js', {
+    const manager = new Manager('https://teslo-api-production-c007.up.railway.app/socket.io/socket.io.js', {
         extraHeaders: {
             authentication: token,
         }
